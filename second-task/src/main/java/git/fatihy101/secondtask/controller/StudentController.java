@@ -23,13 +23,13 @@ public class StudentController extends BaseController<Student> {
 
     @GetMapping("/{id}")
     @Override
-    ResponseEntity<Student> findById(@PathVariable  int id) {
+    ResponseEntity<Student> findById(@PathVariable int id) {
         return super.findById(id);
     }
 
     @PostMapping("/")
     @Override
-    Student save(Student object) {
+    Student save(@RequestBody Student object) {
         return super.save(object);
     }
 
@@ -38,6 +38,4 @@ public class StudentController extends BaseController<Student> {
     void deleteById(@PathVariable int id) {
         super.deleteById(id);
     }
-
-
 }

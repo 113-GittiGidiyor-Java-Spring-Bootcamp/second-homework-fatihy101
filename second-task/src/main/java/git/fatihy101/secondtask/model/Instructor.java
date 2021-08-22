@@ -25,6 +25,10 @@ public class Instructor {
     public Instructor() {
     }
 
+    public int getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }

@@ -1,11 +1,13 @@
 package git.fatihy101.secondtask.dao;
 
 import git.fatihy101.secondtask.model.Instructor;
+import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 import java.util.List;
 
+@Service
 public class InstructorDAO implements BaseDAO<Instructor> {
     private final EntityManager manager;
 
